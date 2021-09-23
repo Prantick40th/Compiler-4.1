@@ -1,0 +1,32 @@
+1:#include<stdio.h>
+2:#include<stdlib.h>
+3:#include<math.h>
+4:#include<conio.h>
+5:int main(void)
+6:{
+7:    FILE *p1,*p2;
+8:    char c;
+9:
+10:    p1 = fopen("datafile1.c", "r");
+11:    p2 = fopen("parentheses.txt","w");
+12:
+13:    if(!p1)
+14:        printf("\nFile can't be opened!");
+15:    else
+16:    {
+17:      	while((c = fgetc(p1)) != EOF)
+18:      	{
+19:        	if ((c == '(') || (c == ')'))
+20:           		fputc(c, p2);
+21:        }
+22:    }
+23:    fclose(p1);
+24:    fclose(p2);
+25:
+26:    p2 = fopen("parentheses.txt","r");
+27:    while((c=fgetc(p2))!=EOF)
+28:		printf("%c",c);
+29:    fclose(p2);
+30:
+31:    return 0;
+32:}
