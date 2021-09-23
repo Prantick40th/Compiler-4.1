@@ -1,0 +1,1 @@
+[kw int] [par (] [par )] [par {] [id printf] [par (] [par )] [sep ;] [par (] [par )] [sep ;] [kw return] [sep ;] [par }] 
