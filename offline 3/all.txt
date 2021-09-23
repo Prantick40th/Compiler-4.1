@@ -1,0 +1,1 @@
+floatid x1=3.125;doubleid f1(intid x){doubleid z;id z=0.01;returnid z;}intid main(void){intid n1;doubleid z;id n1=25;id z=id f1(id n1);
