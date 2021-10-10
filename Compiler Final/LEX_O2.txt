@@ -1,0 +1,14 @@
+[unkn 
+float] [id x1] [op =] [num 3.125] [sep ;] [unkn 
+double] [id f1] [par (] [kw int] [id x] [par )] [unkn 
+{
+double] [id z] [sep ;] [unkn 
+z] [op =] [num 0.01] [sep ;] [unkn 
+return] [id z] [sep ;] [unkn 
+}
+int] [id main] [par (] [kw void] [par )] [unkn 
+{
+int] [id n1] [sep ;] [kw double] [id z] [sep ;] [unkn 
+n1] [op =] [num 25] [sep ;] [id z] [op =] [id f1] [par (] [id n1] [par )] [sep ;] [unkn 
+}
+] 
